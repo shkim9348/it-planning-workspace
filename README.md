@@ -99,7 +99,7 @@ RAG(Retrieval-Augmented Generation)를 활용하여 관련 문서를 기반으�
                         |      Next.js UI      |
                         +----------+-----------+
                                    |
-                              REST API
+                               REST API
                                    |
                         +----------v-----------+
                         |       NestJS         |
@@ -107,16 +107,16 @@ RAG(Retrieval-Augmented Generation)를 활용하여 관련 문서를 기반으�
                         +----+-----------+-----+
                              |           |
                +-------------+           +--------------+
-               |                                    |
-    +----------v----------+            +------------v-----------+
-    |    PostgreSQL       |            |       ChromaDB         |
-    | Business Data       |            | Policy Vector Index    |
-    +---------------------+            +------------------------+
-                             |
-                    +--------v---------+
-                    | Ollama (Qwen3)   |
-                    | AI Analysis      |
-                    +------------------+
+               |                                        |
+    +----------v----------+                +------------v-----------+
+    |    PostgreSQL       |                |       ChromaDB         |
+    | Business Data       |                | Policy Vector Index    |
+    +---------------------+                +------------------------+
+                                   |
+                          +--------v---------+
+                          | Ollama (Qwen3)   |
+                          | AI Analysis      |
+                          +------------------+
 ```
 
 ---
