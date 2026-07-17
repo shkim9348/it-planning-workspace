@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@nestjs/platform-express": "^11.1.28",
+    "csv-parser": "^3.2.1",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/multer": "^2.2.0"
+  }
+}
