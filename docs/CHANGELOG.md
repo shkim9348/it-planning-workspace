@@ -10,10 +10,39 @@
 
 ### Planned
 
-- Dashboard API 개발
-- Dashboard UI 개발
-- AI 비용 분석 기능
-- AI 보고서 생성 기능
+- Dashboard UI (Next.js)
+- Dashboard Chart 연동
+- AI 비용 분석
+- AI 보고서 생성
+- RAG 기반 정책 검색
+- 보고서 자동 생성
+
+---
+
+## [v0.4.0] - Dashboard Backend
+
+### Added
+
+#### Dashboard API
+
+- KPI API (`GET /dashboard/kpi`)
+- 월별 비용 조회 API (`GET /dashboard/monthly-cost`)
+- 서비스별 비용 조회 API (`GET /dashboard/service-cost`)
+- 비용 카테고리 조회 API (`GET /dashboard/category-cost`)
+- 최근 비용 조회 API (`GET /dashboard/recent-costs`)
+
+#### Dashboard Service
+
+- KPI 집계 로직 구현
+- 월별 비용 집계
+- 서비스별 비용 집계
+- 카테고리별 비용 집계
+- 최근 비용 조회 로직 구현
+
+#### Verification
+
+- Dashboard API 전체 Postman 테스트 완료
+- Backend Dashboard 기능 검증 완료
 
 ---
 
@@ -37,8 +66,8 @@
 
 #### Cost API
 
-- `GET /cost` API 구현
-- `GET /cost/count` API 구현
+- `GET /cost`
+- `GET /cost/count`
 
 #### Verification
 
@@ -60,17 +89,11 @@
 
 #### CSV Import
 
-- `POST /import/cost-ledger` API 구현
+- `POST /import/cost-ledger`
 - Multipart File Upload 지원
-- CSV Parsing 기능 구현
-- Preview(JSON) 반환 기능 추가
-
-#### Validation
-
-- 파일 존재 여부 검증
-- CSV 확장자 검증
-- 빈 파일 검증
-- 필수 Header 검증
+- CSV Parsing
+- Validation
+- PostgreSQL 저장 기능
 
 ---
 
@@ -85,23 +108,22 @@
 - README 작성
 - LICENSE 추가
 - .gitignore 작성
-- 프로젝트 문서 구조 생성 (`docs/`)
+- docs 구조 생성
 - Project Charter 작성
 
 #### Git Workflow
 
-- Git 브랜치 전략 수립 (`master`, `develop`, `feature/*`)
+- Git Flow 적용
 - GitHub Issues 기반 작업 관리
-- Conventional Commits 적용
+- Conventional Commit 적용
 
 #### Frontend
 
-- Next.js 프로젝트 초기화
-- TypeScript 적용
-- ESLint 적용
-- App Router 적용
-- 프로젝트 Landing Page 구성
-- Frontend 개발 환경 실행 확인
+- Next.js 초기화
+- TypeScript
+- ESLint
+- App Router
+- Landing Page 구성
 
 ---
 
@@ -112,7 +134,9 @@
 | v0.1.0 | Project Initialization | ✅ Completed |
 | v0.2.0 | CSV Import Foundation | ✅ Completed |
 | v0.3.0 | Database Integration | ✅ Completed |
-| v0.4.0 | Cost Dashboard | ⏳ Planned |
-| v0.5.0 | AI Cost Analysis | ⏳ Planned |
-| v0.6.0 | AI Report Generation | ⏳ Planned |
+| v0.4.0 | Dashboard Backend | ✅ Completed |
+| v0.5.0 | Dashboard UI | ⏳ Planned |
+| v0.6.0 | AI Cost Analysis | ⏳ Planned |
+| v0.7.0 | RAG Policy Search | ⏳ Planned |
+| v0.8.0 | AI Report Generator | ⏳ Planned |
 | v1.0.0 | Portfolio Release | ⏳ Planned |

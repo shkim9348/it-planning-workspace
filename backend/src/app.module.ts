@@ -8,6 +8,8 @@ import { AppService } from './app.service';
 import { ImportModule } from './modules/import/import.module';
 import { CostModule } from './modules/cost/cost.module';
 
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -35,6 +37,8 @@ import { CostModule } from './modules/cost/cost.module';
     ImportModule,
 
     CostModule,
+
+    DashboardModule,
   ],
 
   controllers: [AppController],
