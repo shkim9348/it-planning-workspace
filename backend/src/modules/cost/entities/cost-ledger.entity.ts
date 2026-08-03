@@ -9,6 +9,15 @@ export class CostLedger {
   resource_id: string;
 
   @Column()
+  resource_name: string;
+
+  @Column()
+  service_name: string;
+
+  @Column()
+  vendor: string;
+
+  @Column()
   usage_year: number;
 
   @Column()
@@ -19,4 +28,7 @@ export class CostLedger {
 
   @Column('decimal')
   actual_cost: number;
+
+  @Column()
+  currency: string;
 }

@@ -136,6 +136,30 @@ RAG(Retrieval-Augmented Generation)를 활용하여 관련 문서를 기반으�
 
 ---
 
+# 현재 구현 완료 기능 (Implemented Features)
+
+## Cost API
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /cost | 전체 비용 데이터 조회 |
+| GET | /cost/count | 비용 데이터 건수 조회 |
+| POST | /import/cost-ledger | CSV 업로드 및 PostgreSQL 저장 |
+
+---
+
+## Dashboard API
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /dashboard/kpi | Dashboard KPI 조회 |
+| GET | /dashboard/monthly-cost | 월별 비용 조회 |
+| GET | /dashboard/service-cost | 서비스별 비용 조회 |
+| GET | /dashboard/category-cost | 비용 카테고리 조회 |
+| GET | /dashboard/recent-costs | 최근 비용 조회 |
+
+---
+
 # 프로젝트 구조 (Repository Structure)
 
 ```text
@@ -173,21 +197,30 @@ it-planning-workspace/
 - 프로젝트 문서 작성
 - 개발 환경 구축
 
-## Sprint 1
+## Sprint 1 ✅
 
-- Cost Analysis 구현
+- PostgreSQL 구축
+- CSV Import
+- Cost API
+- Dashboard Backend API
 
 ## Sprint 2
 
-- AI Decision Support 구현
+- Dashboard UI
+- Chart 연동
+- API 연결
 
 ## Sprint 3
 
-- Policy Search(RAG) 구현
+- AI Decision Support
 
 ## Sprint 4
 
-- Report Generator 구현
+- Policy Search (RAG)
+
+## Sprint 5
+
+- Report Generator
 
 ## Release v1.0
 
